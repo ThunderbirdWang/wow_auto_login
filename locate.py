@@ -4,7 +4,7 @@ import numpy as np
 
 
 def get_coordinate(path,img):
-    fz=0.01
+    fz=0.1
     template=cv2.imread(path)
     h,w,t=template.shape
     img=np.array(img)
@@ -15,6 +15,7 @@ def get_coordinate(path,img):
     # if min_val >fz :
     #     print("没有匹配")
     # else:
+    print(min_val)
     if min_val < fz:
         top_left=min_loc
         center=(top_left[0]+int(w/2),top_left[1]+int(h/2))
