@@ -11,12 +11,6 @@ while 1:
     aw=win32gui.GetForegroundWindow()
 
     if hwnd:
-        # if aw!=hwnd:
-        #     try:
-        #         win32gui.SetForegroundWindow(hwnd)
-        #     except Exception as e:
-        #         print(e)
-        #     time.sleep(2)
         img=ImageGrab.grab()
         if get_coordinate(paths[1],img):
             win32gui.PostMessage(hwnd, win32con.WM_CLOSE, 0, 0)
