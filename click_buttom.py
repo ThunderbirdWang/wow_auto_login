@@ -3,7 +3,6 @@ from PIL import ImageGrab
 import time,os,win32gui,win32con
 from locate import get_coordinate
 
-flag=True #结束进程标记
 paths=['run_game.png','animation.png','enter_wow.png','setting.png']
 while 1:
     hwnd = win32gui.FindWindow(None, '魔兽世界') 
