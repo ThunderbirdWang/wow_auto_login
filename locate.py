@@ -15,11 +15,13 @@ def get_coordinate(path,img):
     # if min_val >fz :
     #     print("没有匹配")
     # else:
-    print(min_val)
+    # print(min_val)
     if min_val < fz:
         top_left=min_loc
         center=(top_left[0]+int(w/2),top_left[1]+int(h/2))
         return center
+    else:
+        return False
         
 if __name__ == "__main__":
     path='run_game.png'
