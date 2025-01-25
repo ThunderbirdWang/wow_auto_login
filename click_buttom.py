@@ -2,7 +2,6 @@ import pyautogui
 from PIL import ImageGrab
 import time,win32gui,win32con
 from locate import get_coordinate
-import os
 
 paths=['run_game.png','animation.png','enter_wow.png','setting.png']
 while 1:
